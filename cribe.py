@@ -118,7 +118,7 @@ def download_img(img, dir_path, img_name):
         print("抛出异常：", img)
         print(e)
         return False
-    with open(filename, "a") as f:
+    with open(filename, "wb") as f:
         f.write(res.content)
     return True
 
